@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de maquillaje</title>
+    <link rel="stylesheet" href="./Tienda de maquillaje_files/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="http://127.0.0.1:5500/index.html#" class="logo">GLOW<span>KAS</span></a>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/index.html#categorias">Categorías</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#productos">Productos</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#nosotras">Nosotras</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#contacto">Contacto</a></li>
+        </ul>
+        <button class="nav-cart" onclick="toggleCart()">🛍 Carrito (<span id="cart-count">0</span>)</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <p class="hero-tag">✦ Nueva colección 2025</p>
+            <h1>Tu belleza,<br><em>tu esencia</em></h1>
+            <p>Descubre maquillaje pensado para realzar lo que ya eres. Fórmulas suaves, colores que enamoran y
+                resultados que duran.</p>
+            <a href="http://127.0.0.1:5500/index.html#productos" class="btn-primary">Explorar colección</a>
+        </div>
+        <div class="hero-right">
+            <div class="hero-visual">
+                <div class="floating-pill pill-1">✦ Cruelty Free</div>
+                <div class="hero-circle"></div>
+                <div class="floating-pill pill-2">💖 +500 clientas</div>
+                <div class="floating-pill pill-3">🌿 Natural</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee-wrap">
+        <div class="marquee">
+            <span>GLOWKAS</span><span class="dot">✦</span>
+            <span>MAQUILLAJE NATURAL</span><span class="dot">✦</span>
+            <span>CRUELTY FREE</span><span class="dot">✦</span>
+            <span>NUEVA COLECCIÓN</span><span class="dot">✦</span>
+            <span>ENVÍO COLOMBIA</span><span class="dot">✦</span>
+            <span>GLOWKAS</span><span class="dot">✦</span>
+            <span>MAQUILLAJE NATURAL</span><span class="dot">✦</span>
+            <span>CRUELTY FREE</span><span class="dot">✦</span>
+            <span>NUEVA COLECCIÓN</span><span class="dot">✦</span>
+            <span>ENVÍO COLOMBIA</span><span class="dot">✦</span>
+        </div>
+    </div>
+
+    <section class="section fade-in visible" id="categorias">
+        <p class="section-tag">✦ Explora</p>
+        <h2 class="section-title">Nuestras categorías</h2>
+        <div class="categories-grid">
+            <div>
+                <div class="cat-card">
+                    <div class="cat-bg cat-bg-1">💄</div>
+                    <div class="cat-overlay"><span>Ver todo</span></div>
+                </div>
+                <div class="cat-info">
+                    <h3>Labiales</h3>
+                    <p>12 productos</p>
+                </div>
+            </div>
+            <div>
+                <div class="cat-card">
+                    <div class="cat-bg cat-bg-2">🪞</div>
+                    <div class="cat-overlay"><span>Ver todo</span></div>
+                </div>
+                <div class="cat-info">
+                    <h3>Bases &amp; Correctores</h3>
+                    <p>8 productos</p>
+                </div>
+            </div>
+            <div>
+                <div class="cat-card">
+                    <div class="cat-bg cat-bg-3">🎨</div>
+                    <div class="cat-overlay"><span>Ver todo</span></div>
+                </div>
+                <div class="cat-info">
+                    <h3>Sombras &amp; Paletas</h3>
+                    <p>10 productos</p>
+                </div>
+            </div>
+            <div>
+                <div class="cat-card">
+                    <div class="cat-bg cat-bg-4">✏️</div>
+                    <div class="cat-overlay"><span>Ver todo</span></div>
+                </div>
+                <div class="cat-info">
+                    <h3>Delineadores &amp; Máscaras</h3>
+                    <p>9 productos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section fade-in visible" id="productos">
+        <p class="section-tag">✦ Más vendidos</p>
+        <h2 class="section-title">Productos destacados</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img product-img-1">💄<span class="product-badge">Nuevo</span></div>
+                <div class="product-body">
+                    <p class="product-category">Labiales</p>
+                    <h3 class="product-name">Velvet Rose</h3>
+                    <p class="product-desc">Labial líquido de larga duración con acabado mate aterciopelado.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$38.000</span>
+                        <button class="btn-add" onclick="addToCart(&#39;Velvet Rose&#39;, 38000)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img product-img-2">🪞<span class="product-badge">Top</span></div>
+                <div class="product-body">
+                    <p class="product-category">Bases</p>
+                    <h3 class="product-name">Glow Foundation</h3>
+                    <p class="product-desc">Base fluida con cobertura media-alta y acabado luminoso natural.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$65.000</span>
+                        <button class="btn-add" onclick="addToCart(&#39;Glow Foundation&#39;, 65000)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img product-img-3">🎨</div>
+                <div class="product-body">
+                    <p class="product-category">Sombras</p>
+                    <h3 class="product-name">Paleta Nude Dream</h3>
+                    <p class="product-desc">12 tonos neutros y cálidos para looks de día y noche perfectos.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$89.000</span>
+                        <button class="btn-add" onclick="addToCart(&#39;Paleta Nude Dream&#39;, 89000)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img product-img-4">✏️</div>
+                <div class="product-body">
+                    <p class="product-category">Delineadores</p>
+                    <h3 class="product-name">Liner Preciso</h3>
+                    <p class="product-desc">Delineador de punta ultra fina, resistente al agua y al sudor.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$28.000</span>
+                        <button class="btn-add" onclick="addToCart(&#39;Liner Preciso&#39;, 28000)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img product-img-5">💋<span class="product-badge">Oferta</span></div>
+                <div class="product-body">
+                    <p class="product-category">Labiales</p>
+                    <h3 class="product-name">Coral Kiss</h3>
+                    <p class="product-desc">Tono vibrante coral con hidratación de 8 horas y vitamina E.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$32.000</span>
+                        <button class="btn-add" onclick="addToCart(&#39;Coral Kiss&#39;, 32000)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img product-img-6">👁️</div>
+                <div class="product-body">
+                    <p class="product-category">Máscaras</p>
+                    <h3 class="product-name">Volume Lash</h3>
+                    <p class="product-desc">Máscara volumizante que alarga y define sin apelmazarse.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$42.000</span>
+                        <button class="btn-add" onclick="addToCart(&#39;Volume Lash&#39;, 42000)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner fade-in" id="nosotras">
+        <div class="banner-visual">✨</div>
+        <div class="banner-content">
+            <p class="section-tag">✦ Nuestra filosofía</p>
+            <h2>Belleza que <em>cuida</em> y transforma</h2>
+            <p>En GLOWKAS creemos que el maquillaje es una forma de expresión personal. Por eso creamos productos con
+                ingredientes de calidad, libres de crueldad animal y pensados para todo tipo de piel.</p>
+            <p>Desde Colombia para el mundo — con amor y con glow. 💖</p>
+            <a href="http://127.0.0.1:5500/index.html#productos" class="btn-primary">Conocer más</a>
+        </div>
+    </section>
+
+    <section class="newsletter fade-in" id="contacto">
+        <p class="section-tag" style="color: var(--rose);">✦ Únete</p>
+        <h2>Sé parte del <em>glow</em></h2>
+        <p>Suscríbete y recibe un 10% de descuento en tu primera compra</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="tu@correo.com" id="emailInput">
+            <button onclick="subscribe()">Suscribirse</button>
+        </div>
+    </section>
+
+    <footer>
+        <a href="http://127.0.0.1:5500/index.html#" class="logo">GLOW<span>KAS</span></a>
+        <p>© 2025 GLOWKAS · Hecho con 💄 en Colombia</p>
+        <div class="footer-links">
+            <a href="http://127.0.0.1:5500/index.html#">Instagram</a>
+            <a href="http://127.0.0.1:5500/index.html#">WhatsApp</a>
+            <a href="http://127.0.0.1:5500/index.html#">Políticas</a>
+        </div>
+    </footer>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-backdrop" onclick="toggleCart()"></div>
+        <div class="cart-panel">
+            <button class="btn-close" onclick="toggleCart()">×</button>
+            <h3>Tu carrito 🛍</h3>
+            <div class="cart-items" id="cartItems">
+                <p style="color: var(--light-text); font-size:0.85rem;">Tu carrito está vacío</p>
+            </div>
+            <div class="cart-total" id="cartTotal"></div>
+            <button class="btn-checkout">Finalizar compra</button>
+        </div>
+    </div>
+    
+    <script src="./Tienda de maquillaje_files/script.js.descargar"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
